@@ -1,0 +1,8 @@
+services:
+  calculator-bot:
+    build: .
+    container_name: calculator-telegram-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    init: true
